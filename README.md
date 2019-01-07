@@ -1,0 +1,1 @@
+Project for subject called Database structures. It's index file for file with records. It will contain B-Tree datastructure.
