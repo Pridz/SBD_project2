@@ -6,13 +6,32 @@ using System.Threading.Tasks;
 
 namespace B_Tree_IndexFile
 {
-    class Record
+    public class Record
     {
-        char[] name { get; set; } 
-        char[] surname { get; set; }
-        ulong PESEL { get; set; }
-        uint key { get; set; }
-        ulong position { get; set; }
+        char[] name;
+        char[] surname;
+        ulong PESEL;
+        uint key;
+        ulong position;
+        public const uint BYTE_SIZE = 63;
+
+        public char[] Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public char[] Surname
+        {
+            get { return surname; }
+            set { surname = value; }
+        }
+
+        public ulong Pesel
+        {
+            get { return PESEL; }
+            set { PESEL = value; }
+        }
 
         public Record()
         {
